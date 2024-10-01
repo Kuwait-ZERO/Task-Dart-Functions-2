@@ -4,6 +4,24 @@
  * - that prints your name on the screen.
  */
 
+
+void main(){
+const name= "Hussain";
+printName(name);
+const birth= 2002;
+printAge();
+const language= "en";
+printHello(name, language);
+ int x=1;
+  int y=2;
+  printMax(x, y);
+
+
+}
+void printName(name){
+   print (name);
+}
+
 /**
  * Task 2:
  * Create a function called `printAge`
@@ -11,7 +29,11 @@
  * - and prints the age on the screen.
  * - Age = current year - birth
  */
-
+dynamic printAge({age}) {
+  const birth= 2002;
+int age = (2024 - birth);
+  return print("$age");
+}
 /**
  * Task 3:
  * Create a function called `printHello`
@@ -22,10 +44,31 @@
  * -- fr: it should print `Bonjour NAME`
  * -- tr: it should print `Merhaba NAME`
  */
+void printHello(name, language) {
+if (language =="en")
+ print("Hello $name");
+ if (language =="es")
+ print("Hola $name");
+ if (language =="fr")
+ print("Bonjour $name");
+ if (language =="tr")
+ print("Merhaba $name");
 
+
+
+
+}
 /**
  * Task 4:
  * Create a function called `printMax`
  * - that takes two numbers as parameters,
  * - and prints out the bigger number
  */
+void printMax(x,y){
+  int x=1;
+  int y=2;
+  if (x>y)
+  print (x);
+  if(y>x)
+  print (y);
+}

@@ -9,7 +9,7 @@ void main(){
 const name= "Hussain";
 printName(name);
 const birth= 2002;
-printAge();
+print(printAge(2002,2024));
 const language= "en";
 printHello(name, language);
  int x=1;
@@ -29,11 +29,12 @@ void printName(name){
  * - and prints the age on the screen.
  * - Age = current year - birth
  */
-dynamic printAge({age}) {
-  const birth= 2002;
-int age = (2024 - birth);
-  return print("$age");
+int printAge(int birthYear, int currentYear) {
+  int currentYear = 2024;
+  int age = currentYear - birthYear;
+  return age;
 }
+
 /**
  * Task 3:
  * Create a function called `printHello`

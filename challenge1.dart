@@ -9,7 +9,7 @@ void main(){
 const name= "Hussain";
 printName(name);
 const birth= 2002;
-print(printAge(2002,2024));
+(printAge(2002));
 const language= "en";
 printHello(name, language);
  int x=1;
@@ -29,10 +29,10 @@ void printName(name){
  * - and prints the age on the screen.
  * - Age = current year - birth
  */
-int printAge(int birthYear, int currentYear) {
+void printAge(int birthYear) {
   int currentYear = 2024;
   int age = currentYear - birthYear;
-  return age;
+  print(age);
 }
 
 /**
